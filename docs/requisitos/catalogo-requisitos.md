@@ -278,6 +278,18 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 
 | ID | Categoría y atributo | Requisito no funcional | Ámbito (Global/Local) | UR/FR relacionados | Método de comprobación | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
+
+## 5. Requisitos no funcionales
+
+| ID | Categoría y atributo | Requisito no funcional | Ámbito (Global/Local) | Fuente | Método de comprobación |
+
+| NFR-01 | NFR-Q | El sistema debe garantizar un tiempo de respuesta inferior a 2 segundos para la búsqueda de recetas y carga del catálogo bajo condiciones normales de uso. | G | Documento de Visión y Alcance / Acta A3 | Pruebas de rendimiento midiendo el tiempo de carga con herramientas de automatización. |
+| NFR-02 | NFR-R | La plataforma debe desarrollarse como una aplicación web accesible mediante navegadores estándar modernos (Chrome, Firefox, Edge, Safari). | G | Acta de acuerdos técnicos y operativos | Pruebas de compatibilidad cruzada en los navegadores especificados. |
+| NFR-03 | NFR-I | El idioma principal de la interfaz de usuario debe ser exclusivamente el español. | G | Acta de captura de requisitos generales | Inspección visual de la interfaz de usuario. |
+| NFR-04 | NFR-I | El sistema debe permitir la autenticación de usuarios mediante cuentas externas de Google. | G | FR-006 / FR-018 / Acta de acuerdos técnicos y operativos | Pruebas funcionales de inicio de sesión con Google OAuth. |
+| NFR-05 | NFR-Q | El sistema debe cumplir con la normativa vigente de protección de datos (RGPD) en cuanto al cifrado de contraseñas y la gestión de información personal. | G | Acta de acuerdos técnicos y operativos | Auditoría de seguridad y revisión de políticas de almacenamiento de datos. |
+| NFR-06 | NFR-Q | La interfaz de usuario debe cumplir con pautas básicas de accesibilidad (contraste de colores y navegación por teclado) para facilitar su uso por pacientes con EII. | G | Documento de Visión y Alcance | Evaluación de accesibilidad mediante herramientas de análisis estático y dinámico. |
+
 | NFR-07 |NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) |La plataforma mantendrá los objetivos de capacidad y rendimiento definidos para la primera versión sin intervención manual del personal de la organización.| G | -  | Prueba de carga automatizada con 100 usuarios concurrentes y 10 operaciones/s durante 30 min; comprobar mediante registros de monitorización, ausencia de intervención manual. | - |
 
 Categorías y atributos: 
