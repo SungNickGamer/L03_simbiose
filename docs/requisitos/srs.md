@@ -260,14 +260,16 @@ sin una fuente confirmada.
 | DP-03 | Precisar formatos regionales y condiciones verificables de localización. | Acta de A03, §7.2 | Pendiente |
 
 ## 9. Glosario
-
-Este apartado contiene las definiciones vigentes de los términos del dominio
-que pueden interpretarse de más de una manera. Cada entrada indicará su fuente
-para conservar la procedencia de la definición. El catálogo de requisitos podrá
-enlazar a los términos de esta sección, pero no los definirá de nuevo.
-
-| Término | Definición en Proyecto Simbiosis | Fuente |
+| Término | Definición | Fuente |
 | --- | --- | --- |
+| **Enfermedad Inflamatoria Intestinal (EII)** | Grupo de afecciones inflamatorias crónicas del tubo digestivo, que incluye principalmente a la enfermedad de Crohn y la colitis ulcerosa, condicionando las necesidades dietéticas de los pacientes. | Documento de Visión y Alcance[span_1](start_span)[span_1](end_span) |
+| **Paciente** | Usuario registrado que padece Enfermedad Inflamatoria Intestinal (EII), con acceso a herramientas para introducir sus datos fisiológicos, registrar síntomas, consultar recetas adaptadas y gestionar su historial de salud. | Acta de captura de requisitos generales / Visión y Alcance[span_2](start_span)[span_2](end_span) |
+| **Nutricionista** | Profesional de la salud encargado de crear, publicar y validar recetas o consejos de vida saludable, garantizando la calidad clínica de la información compartida en la plataforma. | Acta de captura de requisitos generales / Visión y Alcance[span_3](start_span)[span_3](end_span) |
+| **Coordinador** | Rol de gestión encargado de moderar el contenido reportado y administrar las cuentas de usuario (aprobación, suspensión o eliminación) para asegurar un entorno seguro. | Acta de captura de requisitos generales / Visión y Alcance[span_4](start_span)[span_4](end_span) |
+| **Receta validada** | Receta que ha superado la revisión de un nutricionista y cuenta con una insignia distintiva que avala su idoneidad clínica para los usuarios de la plataforma. | Acta de captura de requisitos generales / Catálogo[span_5](start_span)[span_5](end_span) |
+| **Requisito Funcional (FR)** | Responsabilidad específica que el sistema debe cumplir, redactada bajo el patrón estándar de comportamiento verificable. | Catálogo de requisitos[span_6](start_span)[span_6](end_span) |
+| **Requisito No Funcional (NFR)** | Condición de calidad, restricción o atributo medible que debe cumplir la plataforma a nivel global o local. | Hoja de trabajo L3 / Catálogo de requisitos[span_7](start_span)[span_7](end_span) |
+
 
 ## 10. Modelos de análisis
 
