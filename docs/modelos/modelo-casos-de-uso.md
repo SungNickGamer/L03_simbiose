@@ -40,11 +40,6 @@ Debes añadir los siguientes casos de uso nuevos (comenzando a partir de `UC-12`
 
 
 > ![Diagrama de Casos de Uso - Salud y Recetas E2](imagenes/casos-de-uso-salud-recetas-e2.png)
-> 
-> ```
-> 
-> 
-> *(Asegúrate de que también se conserve visible el diagrama de E1 en este documento).*
 
 ---
 
