@@ -55,13 +55,63 @@ Debes añadir los siguientes casos de uso nuevos (comenzando a partir de `UC-12`
 
 ### Apartado 6: Descripciones
 
-> *Apartado reservado para la siguiente práctica (L06). Déjalo en blanco o con un texto indicando que se completará en L06 tal como indica la hoja de trabajo.*
+### 6.1. UC-05 Actualizar perfil
+* **Identificador y Nombre:** UC-05 Actualizar perfil
+* **Descripción / Objetivo:** Permitir al usuario modificar los datos personales de su perfil de cuenta en el sistema.
+* **Actor(es) / Participante(s):** Cliente
+* **Precondiciones:** El usuario ha iniciado sesión en el sistema.
+* **Postcondiciones:** Los datos del perfil del usuario quedan actualizados y guardados en el sistema.
+* **Escenario principal de éxito:**
+  1. El usuario solicita actualizar su perfil.
+  2. El sistema muestra el formulario con los datos actuales del perfil.
+  3. El usuario modifica los datos deseados y pulsa en guardar.
+  4. El sistema valida los datos introducidos.
+  5. El sistema guarda los cambios y muestra un mensaje de éxito.
+* **Extensiones (Flujos alternativos):**
+  * **3a. El usuario cancela la actualización:**
+    * 3a.1. El usuario pulsa cancelar antes de guardar.
+    * 3a.2. El caso de uso finaliza sin guardar cambios.
+  * **4a. Datos no válidos:**
+    * 4a.1. El sistema detecta datos incorrectos o incompletos.
+    * 4a.2. El sistema muestra un mensaje de error indicando qué campos son erróneos.
+    * 4a.3. El flujo regresa al paso 3 para que el usuario corrija los datos.
+  * **5a. Fallo de guardado:**
+    * 5a.1. Se produce un error técnico al intentar almacenar los datos en el servidor.
+    * 5a.2. El sistema muestra un aviso de error técnico y permite reintentar o cancelar.
+* **Requisitos especiales (NFR):** *(Copia aquí exactamente los NFR del apartado 5 de tu documento)*
+* **Frecuencia de uso:** Ocasional.
+* **Puntos abiertos:** Ninguno.
 
+### 6.2. UC-21 Buscar recetas
+* **Identificador y Nombre:** UC-21 Buscar recetas
+* **Descripción / Objetivo:** Permitir al usuario buscar recetas aplicando diferentes criterios de filtrado y consultar el detalle de una de ellas.
+* **Actor(es) / Participante(s):** Cliente
+* **Precondiciones:** El usuario se encuentra en la sección de búsqueda de recetas.
+* **Postcondiciones:** Se muestra en pantalla el detalle de la receta seleccionada por el usuario tras la búsqueda.
+* **Escenario principal de éxito:**
+  1. El usuario solicita buscar recetas indicando un ingrediente.
+  2. El sistema aplica el filtro y busca las recetas que contienen dicho ingrediente.
+  3. El sistema muestra la lista de resultados obtenidos.
+  4. El usuario selecciona una receta de la lista para ver su información.
+  5. El sistema muestra los detalles completos de la receta seleccionada.
+* **Extensiones (Flujos alternativos):**
+  * **1a. Búsqueda por palabra, frase o exclusión:**
+    * 1a.1. El usuario introduce texto libre, excluye ingredientes concretos o combina múltiples criterios conforme a lo especificado en el acta.
+    * 1a.2. El sistema procesa la combinación de criterios y continúa en el paso 3.
+  * **3a. No hay resultados:**
+    * 3a.1. El sistema no encuentra ninguna receta que cumpla con los criterios introducidos.
+    * 3a.2. El sistema muestra un mensaje indicando que no hay resultados y el caso de uso finaliza.
+  * **Conflictos, ausencia de criterios y fallos técnicos:**
+    * *(Añade aquí las excepciones adicionales si constan en tu acta)*.
+* **Requisitos especiales (NFR):** *(Copia aquí exactamente los NFR del apartado 5 de tu documento)*
+* **Frecuencia de uso:** Frecuente.
+* **Puntos abiertos:** El alcance de esta descripción es parcial; las demás funciones de UC-21 siguen pendientes y se conservan en el modelo.
 ---
 
 ### Apartado 7: Continuidad
 
-> * **Incorpora en E2:** La gestión completa del historial de salud, el sistema de invitaciones a nutricionistas, el flujo de creación y validación de recetas, y los mecanismos de búsqueda avanzada.
-> * **Queda pendiente:** El desarrollo de las descripciones detalladas de los casos de uso (L06) y las preguntas abiertas que las fuentes actuales del proyecto todavía no resuelven del todo (como ciertos detalles límite en la revocación de permisos o restricciones automáticas de recetas).
+* **Descripciones incorporadas:** Se han incorporado al modelo las descripciones detalladas de UC-05 Actualizar perfil y UC-21 Buscar recetas.
+* **Alcance pendiente:** Las demás funciones avanzadas o secundarias de UC-21 siguen pendientes y se conservan en el modelo para futuras iteraciones.
+* **Declaración de IA:** No se ha utilizado inteligencia artificial en la realización de la actividad L06.
 > 
 >
